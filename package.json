@@ -1,6 +1,6 @@
 {
   "name": "updox",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Get markdown documentation from your javascript comments",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "chai": "^1.9.1",
+    "glob": "^3.2.9",
+    "mkdirp": "^0.5.0",
     "mocha": "^1.18.2"
   }
 }
