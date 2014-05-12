@@ -1,6 +1,6 @@
 {
   "name": "updox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get markdown documentation from your javascript comments",
   "main": "updox.js",
   "scripts": {

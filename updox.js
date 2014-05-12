@@ -51,7 +51,7 @@ var renderFile = function (filepath, opts) {
 };
 
 /**
- * updox
+ * Document files in glob route path
  *
  * Options:
  *
@@ -59,7 +59,7 @@ var renderFile = function (filepath, opts) {
  * - `destname`: name of docfile (only when one file is documented)
  *
  * @param  {String} route   glob path of javascript files
- * @param  {Object} options
+ * @param  {Object} options destiny and out name file
  * @return {Array}         list of documented files
  */
 

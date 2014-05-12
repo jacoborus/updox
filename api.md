@@ -8,12 +8,12 @@ updox API
 updox( route, options )
 ------------------------------------------------------------
 
-updox
+Document files in glob route path
 
 **Parameters:**
 
 - **route** *String*: glob path of javascript files
-- **options** *Object*: 
+- **options** *Object*: destiny and out name file
 - **Return** *Array*: list of documented files
 
 
