@@ -1,0 +1,33 @@
+{
+  "name": "updox",
+  "version": "0.0.0",
+  "description": "Get markdown documentation from your javascript comments",
+  "main": "index.js",
+  "scripts": {
+    "build-docs": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jacoborus/updox.git"
+  },
+  "keywords": [
+    "documentation",
+    "generator",
+    "markdown",
+    "dox"
+  ],
+  "author": "Jacobo Tabernero - github.com/jacoborus <jacobo@xarope.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacoborus/updox/issues"
+  },
+  "homepage": "https://github.com/jacoborus/updox",
+  "devDependencies": {
+    "dox": "^0.4.4",
+    "handlebars": "^2.0.0-alpha.2"
+  },
+  "dependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.18.2"
+  }
+}
