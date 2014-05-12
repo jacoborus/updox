@@ -1,10 +1,10 @@
 {
   "name": "updox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get markdown documentation from your javascript comments",
-  "main": "index.js",
+  "main": "updox.js",
   "scripts": {
-    "build-docs": "node ./index.js"
+    "build-docs": "node ./createdocs.js"
   },
   "repository": {
     "type": "git",
@@ -22,14 +22,9 @@
     "url": "https://github.com/jacoborus/updox/issues"
   },
   "homepage": "https://github.com/jacoborus/updox",
-  "devDependencies": {
-    "dox": "^0.4.4",
-    "handlebars": "^2.0.0-alpha.2"
-  },
   "dependencies": {
-    "chai": "^1.9.1",
     "glob": "^3.2.9",
-    "mkdirp": "^0.5.0",
-    "mocha": "^1.18.2"
+    "mdox": "^0.4.5",
+    "mkdirp": "^0.5.0"
   }
 }

@@ -1,0 +1,1 @@
+require('./')('./updox.js', {dest: '.', destname: 'api' });

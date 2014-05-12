@@ -1,10 +1,10 @@
 {{title}} API
 ============
 
-{{#data}}{{^ignore}}
-- [{{ctx.name}}](#{{ctx.name}}){{/ignore}}{{/data}}
+{{#data}}{{^ignore}}{{^fake}}
+- [{{ctx.name}}](#{{ctx.name}}){{/fake}}{{/ignore}}{{/data}}
 
-{{#data}}{{^ignore}}<a name="{{ctx.name}}"></a>
+{{#data}}{{^ignore}}{{^fake}}<a name="{{ctx.name}}"></a>
 {{ctx.name}}( {{tagList tags}} )
 ------------------------------------------------------------
 
@@ -17,4 +17,4 @@
 
 {{{description.body}}}
 
-{{/ignore}}{{/data}}
+{{/fake}}{{/ignore}}{{/data}}

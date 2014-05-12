@@ -1,6 +1,6 @@
 'use strict';
 
-var dox = require('dox'),
+var dox = require('mdox'),
 	fs = require('fs'),
 	Handlebars = require('handlebars'),
 	glob = require('glob'),
@@ -43,15 +43,27 @@ var template = Handlebars.compile(templateFile);
 
 var renderFile = function (filepath, opts) {
 	var file = fs.readFileSync(filepath, 'utf8');
-	var data = dox.parseComments(file, { raw: true });
+	var data = dox.jsonGenerate(file, { raw: true });
 	var docname = path.basename( filepath, path.extname( filepath ));
 	var mdown = template({data: data, title: docname});
 	var filename = opts.destname || docname;
 	fs.writeFileSync( path.resolve( opts.dest, filename + '.md'), mdown );
 };
 
+/**
+ * updox
+ *
+ * Options:
+ *
+ * - `dest`: documentation folder ('./docs' by default)
+ * - `destname`: name of docfile (only when one file is documented)
+ *
+ * @param  {String} route   glob path of javascript files
+ * @param  {Object} options
+ * @return {Array}         list of documented files
+ */
 
-module.exports = function (route, options) {
+var updox = function (route, options) {
 	var opts = options || {};
 	opts.dest = opts.dest || './docs';
 	opts.destname = opts.destname || false;
@@ -73,3 +85,5 @@ module.exports = function (route, options) {
 		}
 	});
 };
+
+module.exports = updox;
