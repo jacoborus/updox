@@ -1,6 +1,6 @@
 {
   "name": "updox",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Get markdown documentation from your javascript comments",
   "main": "updox.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/jacoborus/updox",
   "dependencies": {
     "glob": "^3.2.9",
+    "handlebars": "^2.0.0-alpha.2",
     "mdox": "^0.4.5",
     "mkdirp": "^0.5.0"
   }
